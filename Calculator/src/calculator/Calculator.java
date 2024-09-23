@@ -34,14 +34,25 @@ public class Calculator {
     System.out.println("\n Entrer le nombre :");
     val2=sc.nextInt(); // On demande a sc de donner le prochain entier
     int operande2;
-    operande2=val2;
-    if (nb==1);{
-    System.out.println(val1+val2);}
-    else if(nb==2);{
-    System.out.println(val1-val2);}
-    else if(nb==3)
+    switch(nb){
+        case 1 :
+            System.out.println(val1+val2);
+            break;
+        case 2 :
+            System.out.println(val1-val2);
+            break;
+        case 3 :
+            System.out.println(val1*val2);
+            break;
+        case 4 :
+            System.out.println(val1/val2);
+            break;
+        case 5 :
+            System.out.println(val1%val2);
+            break;
+
     }
-    
+
     }
-    
+
 }
