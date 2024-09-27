@@ -18,25 +18,47 @@ public class TP1_convertiseur_COUSSEAU {
     public static void main(String[] args) {
         // TODO code application logic here
     double val1;
-    double ck;
-    double kc;
-    double fc;
-    double cf;
-    double kf;
-    double fk;
+    double conv;
+    int nb;
     Scanner sc = new Scanner(System.in);
-System.out.println("\n Entrer le nombre :");
+System.out.println("bonjour saisissez une valeur:");
 val1=sc.nextDouble();
-ck=CelciusVersKelvin(val1);
-kc=FarenheitVersCelcius( val1);
-fc=CelciusVersFarenheit(val1)
+System.out.println("Saisissez la conversion que vous souhaiter effectuer :");
+System.out.println("1) De Celcius vers Kelvin");
+System.out.println("2) De Kelvin vers Celcius ");
+System.out.println("3) De Farenheit vers Celcius ");
+System.out.println("4) De Celcius vers Farenheit");
+System.out.println("5) De Kelvin vers Farenheit");
+System.out.println("6) De Farenheit vers Kelvin");
+nb=sc.nextInt();
 
-
-
-
-
-
-    
+switch(nb){
+    case 1:
+        conv=CelciusVersKelvin(val1);
+        System.out.println(val1+ "degré Celsius est égal à "+conv+" degrés Kelvin");
+        break;
+    case 2:
+        conv=KelvinVersCelsius(val1);
+        System.out.println(val1+ "degré Kelvin est égal à"+conv+" degrés Celcius");
+        break;
+    case 3:
+        conv=FarenheitVersCelcius(val1);
+        System.out.println(val1+ "degré Cel est égal à "+conv+" degrés Kelvin");
+        break;
+    case 4:
+        conv=CelciusVersFarenheit(val1);
+        System.out.println(val1+ "degré Celsius est égal à "+conv+" degrés Farenheit");
+        break;
+    case 5:
+        conv=KelvinVersFarenheit(val1);
+        System.out.println(val1+ "degré Kelvin est égal à "+conv+" degrés Farenheit");
+        break;
+    case 6:
+        conv=FarenheitversKelvin(val1);
+        System.out.println(val1+ "degré Farenheit est égal à "+conv+" degrés Kelvin");
+        break;
+        
+    }
     }
 public static double CelciusVersKelvin (double tCelcius) {
 double conv1;
@@ -52,6 +74,10 @@ return (tFarenheit-32)/1.8;
 public static double CelciusVersFarenheit (double tCelcius) {
     return tCelcius*1.8+32;
 }
-public static double KelvinVersFarenheitin (double tKelvin) {
+public static double KelvinVersFarenheit (double tKelvin) {
     return 1.8*(tKelvin-273.15)+32;
 }
+public static double FarenheitversKelvin (double tFarenheit){
+    return (tFarenheit +459.67)*5/9;
+    }
+}   
