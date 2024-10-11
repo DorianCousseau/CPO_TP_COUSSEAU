@@ -32,7 +32,7 @@ public BouteilleBiere(String unNom, float unDegre, String uneBrasserie){
     ouverte = true;
     System.out.println("La bière " + nom + " est maintenant ouverte.");
     return true;
-    
+ 
 }
 }
 
