@@ -16,15 +16,20 @@ public class TP2_Bieres_Cousseau {
     public static void main(String[] args) {
         // TODO code application logic here
  
-BouteilleBiere Biere1 = new BouteilleBiere( "Cuvée des trolls", (float)7.0,"Dubuisson") ;
-Biere1.lireEtiquette();
-BouteilleBiere Biere2 = new BouteilleBiere("Leffe", (float)6.6 ,"Abbaye de Leffe") ;
-Biere2.lireEtiquette();
-BouteilleBiere Biere3 = new BouteilleBiere("Kwak", (float)8.4,"Pauwel") ;
-Biere3.lireEtiquette();
-BouteilleBiere Biere4 = new BouteilleBiere("Desperados", (float)5.9 ,"Alken-Maes") ;
-Biere4.lireEtiquette();
-BouteilleBiere Biere5 = new BouteilleBiere("Rince cochon ", (float)8.5 ,"SBA") ;
-Biere5.lireEtiquette();
+        BouteilleBiere premiereBiere = new BouteilleBiere("Cuvée des trolls", 7.0f, "Dubuisson");
+        BouteilleBiere deuxiemeBiere = new BouteilleBiere("Leffe", 6.6f, "Abbaye de Leffe");
+        BouteilleBiere troisiemeBiere = new BouteilleBiere("Guinness", 4.2f, "St. James's Gate Brewery");
+
+        premiereBiere.lireEtiquette();
+        premiereBiere.decapsuler();
+        System.out.println(premiereBiere);
+
+        deuxiemeBiere.lireEtiquette();
+        System.out.println(deuxiemeBiere);
+
+        troisiemeBiere.lireEtiquette();
+        troisiemeBiere.decapsuler();
+        System.out.println(troisiemeBiere);
+    }
 }
-}
+
