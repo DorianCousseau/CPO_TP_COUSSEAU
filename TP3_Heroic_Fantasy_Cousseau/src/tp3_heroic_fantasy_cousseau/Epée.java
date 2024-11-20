@@ -22,7 +22,6 @@ public class Epée extends Arme {
         return finesse;
     }
 
-    @Override
     public String toString() {
         return super.toString() + ", Finesse: " + finesse;
     }

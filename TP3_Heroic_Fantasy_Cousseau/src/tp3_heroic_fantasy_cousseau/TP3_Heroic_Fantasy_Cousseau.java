@@ -4,6 +4,8 @@
  */
 package tp3_heroic_fantasy_cousseau;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author doria
@@ -13,10 +15,8 @@ public class TP3_Heroic_Fantasy_Cousseau {
     /**
      * @param args the command line arguments
      */
-import Arme.*;
-import Personnages.*;
 
-import java.util.ArrayList;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -65,3 +65,5 @@ public class Main {
         System.out.println(gandalf);
     }
 }
+}
+

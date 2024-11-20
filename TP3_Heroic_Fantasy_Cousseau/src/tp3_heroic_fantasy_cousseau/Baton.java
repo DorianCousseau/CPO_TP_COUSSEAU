@@ -22,7 +22,6 @@ public class Baton extends Arme {
         return age;
     }
 
-    @Override
     public String toString() {
         return super.toString() + ", Âge: " + age;
     }

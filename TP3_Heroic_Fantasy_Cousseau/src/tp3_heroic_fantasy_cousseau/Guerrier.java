@@ -26,5 +26,13 @@ public class Guerrier extends Personnages {
     public String toString() {
         return super.toString() + ", Guerrier à cheval: " + aCheval;
     }
+
+    void ajouterArme(Epée excalibur) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void equiperArme(String excalibur) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 

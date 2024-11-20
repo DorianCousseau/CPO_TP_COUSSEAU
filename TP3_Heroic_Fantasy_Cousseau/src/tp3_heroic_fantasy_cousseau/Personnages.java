@@ -26,17 +26,16 @@ public abstract class Personnages implements EtreVivant {
         this.niveauVie = niveauVie;
     }
 
-    @Override
     public void seFatiguer() {
         niveauVie -= 10;
     }
 
-    @Override
+
     public boolean estVivant() {
         return niveauVie > 0;
     }
 
-    @Override
+
     public void estAttaque(int points) {
         niveauVie -= points;
     }
